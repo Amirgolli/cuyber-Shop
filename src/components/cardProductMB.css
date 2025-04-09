@@ -1,0 +1,62 @@
+.cardProductMB {
+    width: 163.5px;
+    height: 352px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(246, 246, 246, 1);
+    margin-bottom: 16px;
+}
+
+#likesCards {
+    width: 29.33px;
+    margin-left: 92px;
+}
+
+#imgProduct {
+    width: 104px;
+}
+
+.cardProductMB p {
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 7.5px;
+}
+
+.cardProductMB h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 3%;
+}
+
+#btnProduct {
+    width: 139.5px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width:750px) {
+    .cardProductMB {
+        width: 305px;
+        height: 432px;
+    }
+
+    #imgProduct {
+        width: 164px;
+    }
+
+    #likesCards {
+        margin-left: 200px;
+    }
+
+    #btnProduct{
+        width: 188px;
+    }
+
+}
