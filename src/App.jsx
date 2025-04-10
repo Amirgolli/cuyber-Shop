@@ -174,10 +174,10 @@ function App() {
       </div>
       {/* .....................PreviewCard........................ */}
       <div className="Preview">
-      <PreviewCard clasNm={'previewcardRemove'} image={Watchandaipod} title={'Popular Products'} Bgcolor={'rgba(255, 255, 255, 1)'}></PreviewCard>
-      <PreviewCard clasNm={'previewcard'} image={IpadPro} title={'Ipad Pro'} Bgcolor={'rgba(249, 249, 249, 1)'}></PreviewCard>
-      <PreviewCard clasNm={'previewcardRemove'} image={Gallaxy} title={'Samsung Galaxy '} Bgcolor={'rgba(234, 234, 234, 1)'}></PreviewCard>
-      <PreviewCard clasNm={'previewcardRemove'} image={Mack} title={'Macbook Pro'} Bgcolor={'rgba(44, 44, 44, 1)'} border={'white'}></PreviewCard>
+        <PreviewCard clasNm={'previewcardRemove'} image={Watchandaipod} title={'Popular Products'} Bgcolor={'rgba(255, 255, 255, 1)'}></PreviewCard>
+        <PreviewCard clasNm={'previewcard'} image={IpadPro} title={'Ipad Pro'} Bgcolor={'rgba(249, 249, 249, 1)'}></PreviewCard>
+        <PreviewCard clasNm={'previewcardRemove'} image={Gallaxy} title={'Samsung Galaxy '} Bgcolor={'rgba(234, 234, 234, 1)'}></PreviewCard>
+        <PreviewCard clasNm={'previewcardRemove'} image={Mack} title={'Macbook Pro'} Bgcolor={'rgba(44, 44, 44, 1)'} border={'white'}></PreviewCard>
       </div>
     </>
   )

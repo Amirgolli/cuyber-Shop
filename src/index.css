@@ -392,6 +392,26 @@
     .productsDK {
         display: none;
     }
+
+}
+
+
+@media (min-width: 750px) and (max-width: 1521px) {
+    .banner{
+        width: 1509px;
+    }
+    .productsDK{
+        width: 1509px;
+    }
+    .categories{
+        width: 1509px;
+    }
+    .cardProduct{
+        width: 1509px;
+    }
+    .Preview{
+        width: 1509px;
+    }
 }
 
 @media screen and (min-width:750px) {
