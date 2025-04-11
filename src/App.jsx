@@ -39,6 +39,8 @@ import Ipad from './images/Ipad.png';
 import IpadPro from './images/IpadPro.png';
 import Watchandaipod from './images/watch&aipod.png';
 import Gallaxy from './images/Gallaxy.png';
+import GoldIphone from './images/GoldIphone.png';
+import WhiteIphone from './images/WhiteIphone.png';
 
 function App() {
 
@@ -179,6 +181,17 @@ function App() {
         <PreviewCard clasNm={'previewcardRemove'} image={Gallaxy} title={'Samsung Galaxy '} Bgcolor={'rgba(234, 234, 234, 1)'}></PreviewCard>
         <PreviewCard clasNm={'previewcardRemove'} image={Mack} title={'Macbook Pro'} Bgcolor={'rgba(44, 44, 44, 1)'} border={'white'}></PreviewCard>
       </div>
+      {/* .....................DiscountsCards........................ */}
+      <section className="DiscountsCards">
+        <h3 id="titleDiscoun">Discounts up to -50%</h3>
+        <div className="cardProduct">
+          <Cardproductmb image={GoldIphone} info={'Apple iPhone 14 Pro 512GB Gold...'} price={'$1437'}></Cardproductmb>
+          <Cardproductmb image={airpod} info={'AirPods Max Silver...'} price={'$549'}></Cardproductmb>
+          <Cardproductmb image={Watch} info={'Apple Watch Series 9 GPS 41...'} price={'$399'}></Cardproductmb>
+          <Cardproductmb image={WhiteIphone} info={'Apple iPhone 14 Pro 1TB Gold (MQ2V3)'} price={'$1499'}></Cardproductmb>
+        </div>
+      </section>
+
     </>
   )
 }

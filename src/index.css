@@ -376,7 +376,21 @@
     display: flex;
     
 }
-
+/* .........................DiscountsCards............................ */
+.DiscountsCards{
+    margin:56px 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+#titleDiscoun{
+    margin-bottom: 32px;
+    margin-left: 33px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
 
 
 /* .........................media queries............................ */
@@ -449,6 +463,12 @@
 
     .titleCategory {
         gap: 250px;
+    }
+    .DiscountsCards{
+        margin:80px 0 ;
+    }
+    #titleDiscoun{
+        margin-left: 67px;
     }
     
 }
