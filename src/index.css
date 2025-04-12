@@ -354,42 +354,138 @@
     display: flex;
     gap: 32px;
 }
-#black-txt-category{
+
+#black-txt-category {
     font-weight: 500;
     line-height: 32px;
     border-bottom: solid 2px black;
 }
-#gray-txt-category{
+
+#gray-txt-category {
     font-weight: 500;
     line-height: 32px;
     color: rgba(139, 139, 139, 1);
 }
 
-.cardProduct{
+.cardProduct {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 56px;
 }
+
 /* .........................framePreview............................ */
-.Preview{
+.Preview {
     display: flex;
-    
+
 }
+
 /* .........................DiscountsCards............................ */
-.DiscountsCards{
-    margin:56px 0;
+.DiscountsCards {
+    margin: 56px 0;
     display: flex;
     flex-direction: column;
-    
+
 }
-#titleDiscoun{
+
+#titleDiscoun {
     margin-bottom: 32px;
     margin-left: 33px;
     text-align: left;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
+}
+
+/* .........................bigSummerSale............................ */
+
+.bigSummerSale {
+    height: 512px;
+    background-image: url('images/summerSaleMB.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#titleSale {
+    color: white;
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 72px;
+    letter-spacing: -1%;
+    margin: 0 5px;
+}
+
+#pSale {
+    color: rgba(120, 120, 120, 1);
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/* .........................footer............................ */
+
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-top: 48px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+#logoWhite {
+    height: 27px;
+    margin-top: 32.5px;
+}
+
+#pFooter {
+    color: rgba(207, 207, 207, 1);
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+.partList {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 32px;
+
+}
+
+
+.titleFooter {
+    font-weight: 600;
+    color: white;
+}
+#lists{
+    display: flex;
+    flex-direction: column;
+}
+.liServises {
+    color: rgba(207, 207, 207, 1);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 25.67px;
+    margin-bottom: 42px;
+}
+
+.iconSocailMedia {
+    width: 24px;
 }
 
 
@@ -411,19 +507,27 @@
 
 
 @media (min-width: 750px) and (max-width: 1521px) {
-    .banner{
+    .banner {
         width: 1509px;
     }
-    .productsDK{
+
+    .productsDK {
         width: 1509px;
     }
-    .categories{
+
+    .categories {
         width: 1509px;
     }
-    .cardProduct{
+
+    .cardProduct {
         width: 1509px;
     }
-    .Preview{
+
+    .Preview {
+        width: 1509px;
+    }
+
+    .bigSummerSale {
         width: 1509px;
     }
 }
@@ -464,11 +568,26 @@
     .titleCategory {
         gap: 250px;
     }
-    .DiscountsCards{
-        margin:80px 0 ;
+
+    .DiscountsCards {
+        margin: 80px 0;
     }
-    #titleDiscoun{
+
+    #titleDiscoun {
         margin-left: 67px;
     }
-    
+
+    .bigSummerSale {
+        height: 448px;
+        background-image: url("images/SummerDK.png");
+    }
+    #lists{
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .footer {
+        flex-direction: row;
+
+    }
 }

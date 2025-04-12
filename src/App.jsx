@@ -6,6 +6,7 @@ import Category from './components/cardsCategory';
 import Cardproductmb from './components/cardProductMB';
 import PreviewCard from './components/PreviewCard';
 
+
 import burgurMenu from './images/burgur menu.png';
 import logo from './images/Logo Vector.png';
 // import search from './images/search.png';
@@ -41,6 +42,12 @@ import Watchandaipod from './images/watch&aipod.png';
 import Gallaxy from './images/Gallaxy.png';
 import GoldIphone from './images/GoldIphone.png';
 import WhiteIphone from './images/WhiteIphone.png';
+import Twitter from './images/Twitter.png';
+import Facebook from './images/Facebook.png';
+import Tiktok from './images/Tiktok.png';
+import Instagram from './images/Instagram.png';
+import LogoFooter from './images/Logo white.png';
+
 
 function App() {
 
@@ -191,6 +198,51 @@ function App() {
           <Cardproductmb image={WhiteIphone} info={'Apple iPhone 14 Pro 1TB Gold (MQ2V3)'} price={'$1499'}></Cardproductmb>
         </div>
       </section>
+      {/* .....................bigSummerSale........................ */}
+      <div className="bigSummerSale">
+        <div id="txtBigSummerSale">
+          <h3 id="titleSale">Big Summer Sale</h3>
+          <p id="pSale">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+        </div>
+        <ShopNowBTN></ShopNowBTN>
+      </div>
+      {/* .....................footer........................ */}
+      <footer className="footer">
+        <div className="about">
+          <img id='logoWhite' src={LogoFooter} alt="" />
+          <p id='pFooter'>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+        </div>
+        <div id="lists">
+          <div className="listFooter">
+            <ul className='partList'>
+              <li className="titleFooter">Services</li>
+              <li className="liServises">Bonus program</li>
+              <li className="liServises">Gift cards</li>
+              <li className="liServises">Credit and payment</li>
+              <li className="liServises">Service contracts</li>
+              <li className="liServises">Non-cash account</li>
+              <li className="liServises">Payment</li>
+            </ul>
+          </div>
+          <div className="listFooter">
+            <ul className='partList'>
+              <li className="titleFooter">Assistance to the buyer</li>
+              <li className="liServises">Find an order</li>
+              <li className="liServises">Terms of delivery</li>
+              <li className="liServises">Exchange and return of goods</li>
+              <li className="liServises">Guarantee</li>
+              <li className="liServises">Frequently asked questions</li>
+              <li className="liServises">Terms of use of the site</li>
+            </ul>
+          </div>
+        </div>
+        <div className="socialMedia">
+          <img className='iconSocailMedia' src={Twitter} alt="" />
+          <img className='iconSocailMedia' src={Facebook} alt="" />
+          <img className='iconSocailMedia' src={Tiktok} alt="" />
+          <img className='iconSocailMedia' src={Instagram} alt="" />
+        </div>
+      </footer>
 
     </>
   )
