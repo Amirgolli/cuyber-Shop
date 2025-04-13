@@ -47,9 +47,67 @@ import Facebook from './images/Facebook.png';
 import Tiktok from './images/Tiktok.png';
 import Instagram from './images/Instagram.png';
 import LogoFooter from './images/Logo white.png';
-
+// 
 
 function App() {
+
+
+
+
+  const cardCategory = [
+    {
+      icon: Phones,
+      txt: "Phones"
+    },
+    {
+      icon: Smart,
+      txt: "Smart Watches"
+    },
+    {
+      icon: Cameras,
+      txt: "Cameras"
+    },
+    {
+      icon: Headphones,
+      txt: "Headphones"
+    }, {
+      icon: Computers,
+      txt: "Computers"
+    }, {
+      icon: Gaming,
+      txt: "Gaming"
+    }
+  ];
+
+  const productsMB = [
+    {
+      image: airpod,
+      title: "Apple  AirPods Max",
+      info: "Computational audio. Listen, it is powerful",
+      id: "airpodMB"
+    },
+    {
+      image: vision,
+      title: "Apple Vision Pro",
+      info: "An immersive way to experience entertainment",
+      id: "visionMB"
+    },
+    {
+      image: ps5,
+      title: "Playstation 5",
+      info: "Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.",
+      id: "PS5MB"
+    },
+    {
+      image: Mack,
+      title: "Macbook Air",
+      info: "The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.",
+      id: "airpodMB"
+
+    },
+  ];
+
+
 
   return (
     <>
@@ -96,20 +154,28 @@ function App() {
       </div>
       {/* .....................productsMB........................ */}
       <div className="productaMB">
-        <div id='airpodMB'>
-          <Products image={airpod} title={'Apple  AirPods Max'} info={'Computational audio. Listen, it is powerful '} ></Products>
-        </div>
-        <div id='visionMB'>
-          <Products image={vision} title={'Apple Vision Pro'} info={'An immersive way to experience entertainment'} ></Products>
-        </div>
-        <div id='PS5MB'>
-          <Products image={ps5} title={'Playstation 5'} info={'Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.'} ></Products>
-        </div>
-        <div id='airpodMB'>
-          <Products image={Mack} title={'Macbook Air'} info={'The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.'} ></Products>
-          <button id='btn-productsMB' type="button">Shop now</button>
-        </div>
+        {
+          productsMB.map((product, index) =>
+            <div id={product.id}>
+              <Products
+                key={index}
+                image={product.image}
+                title={product.title}
+                info={product.info}
+              ></Products>
+              {
+                (product.title === "Macbook Air") && (
+                  <button id='btn-productsMB' type="button">
+                    Shop now
+                  </button>
+                )
+              }
+
+            </div>
+          )
+        }
       </div>
+
       {/* .....................productsDK........................ */}
       <div className="productsDK">
         <div className="leftProduct">
@@ -154,12 +220,10 @@ function App() {
           <img id='Arrow' src={Arrow} alt="" />
         </div>
         <div className="cardsCategory">
-          <Category icon={Phones} txt={'Phones'} ></Category>
-          <Category icon={Smart} txt={'Smart Watches'} ></Category>
-          <Category icon={Cameras} txt={'Cameras'} ></Category>
-          <Category icon={Headphones} txt={'Headphones'} ></Category>
-          <Category icon={Computers} txt={'Computers'} ></Category>
-          <Category icon={Gaming} txt={'Gaming'} ></Category>
+          {cardCategory.map((card, index) =>
+            <Category key={index} icon={card.icon} txt={card.txt} ></Category>
+          )
+          }
 
         </div>
       </div>
@@ -201,42 +265,51 @@ function App() {
       {/* .....................bigSummerSale........................ */}
       <div className="bigSummerSale">
         <div id="txtBigSummerSale">
-          <h3 id="titleSale">Big Summer Sale</h3>
+          <h3 id={"titleSale"}>Big Summer Sale</h3>
           <p id="pSale">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
         </div>
         <ShopNowBTN></ShopNowBTN>
       </div>
       {/* .....................footer........................ */}
-      <footer className="footer">
-        <div className="about">
-          <img id='logoWhite' src={LogoFooter} alt="" />
-          <p id='pFooter'>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
-        </div>
-        <div id="lists">
-          <div className="listFooter">
-            <ul className='partList'>
-              <li className="titleFooter">Services</li>
-              <li className="liServises">Bonus program</li>
-              <li className="liServises">Gift cards</li>
-              <li className="liServises">Credit and payment</li>
-              <li className="liServises">Service contracts</li>
-              <li className="liServises">Non-cash account</li>
-              <li className="liServises">Payment</li>
-            </ul>
+      <footer className="backFooter">
+        <div className="footer">
+          <div className="about">
+            <img id='logoWhite' src={LogoFooter} alt="" />
+            <p id='pFooter'>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
           </div>
-          <div className="listFooter">
-            <ul className='partList'>
-              <li className="titleFooter">Assistance to the buyer</li>
-              <li className="liServises">Find an order</li>
-              <li className="liServises">Terms of delivery</li>
-              <li className="liServises">Exchange and return of goods</li>
-              <li className="liServises">Guarantee</li>
-              <li className="liServises">Frequently asked questions</li>
-              <li className="liServises">Terms of use of the site</li>
-            </ul>
+          <div id="lists">
+            <div className="listFooter">
+              <ul className='partList'>
+                <li className="titleFooter">Services</li>
+                <li className="liServises">Bonus program</li>
+                <li className="liServises">Gift cards</li>
+                <li className="liServises">Credit and payment</li>
+                <li className="liServises">Service contracts</li>
+                <li className="liServises">Non-cash account</li>
+                <li className="liServises">Payment</li>
+              </ul>
+            </div>
+            <div className="listFooter">
+              <ul className='partList'>
+                <li className="titleFooter">Assistance to the buyer</li>
+                <li className="liServises">Find an order</li>
+                <li className="liServises">Terms of delivery</li>
+                <li className="liServises">Exchange and return of goods</li>
+                <li className="liServises">Guarantee</li>
+                <li className="liServises">Frequently asked questions</li>
+                <li className="liServises">Terms of use of the site</li>
+              </ul>
+            </div>
           </div>
+          <div className="socialMedia">
+            <img className='iconSocailMedia' src={Twitter} alt="" />
+            <img className='iconSocailMedia' src={Facebook} alt="" />
+            <img className='iconSocailMedia' src={Tiktok} alt="" />
+            <img className='iconSocailMedia' src={Instagram} alt="" />
+          </div>
+
         </div>
-        <div className="socialMedia">
+        <div className="socialMediaDK">
           <img className='iconSocailMedia' src={Twitter} alt="" />
           <img className='iconSocailMedia' src={Facebook} alt="" />
           <img className='iconSocailMedia' src={Tiktok} alt="" />
