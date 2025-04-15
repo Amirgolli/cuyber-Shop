@@ -1,0 +1,126 @@
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-top: 48px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+#logoWhite {
+    height: 27px;
+    margin-top: 32.5px;
+}
+
+#pFooter {
+    color: rgba(207, 207, 207, 1);
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+.partList {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 32px;
+
+}
+
+
+.titleFooter {
+    font-weight: 600;
+    color: white;
+}
+#lists{
+    display: flex;
+    flex-direction: column;
+}
+.liServises {
+    color: rgba(207, 207, 207, 1);
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.liServises:hover{
+    color: white;
+    transition: all ease .2s;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 25.67px;
+    margin-bottom: 42px;
+}
+.socialMediaDK {
+    display: flex;
+
+}
+
+.iconSocailMedia {
+    width: 24px;
+
+}
+.backFooter{
+    background-color: black;
+}
+
+
+/* .........................media queries............................ */
+@media screen and (max-width:750px) {
+    .socialMediaDK{
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 750px) and (max-width: 1521px) {
+
+    
+    .footer {
+        width: 1509px;
+    }
+    
+
+}
+
+@media screen and (min-width:750px) {
+
+    #lists{
+        flex-direction: row;
+        gap: 240px;
+        margin-left: 160px;
+        
+
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: first baseline;
+
+    }
+    .socialMedia{
+        display: none;
+    }
+    #pFooter{
+        width: 344px;
+        text-align: left;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .partList{
+        align-items: baseline;
+    }
+    .iconSocailMedia{
+        margin-top: 126px;
+        margin-left: 30px;
+    }
+}

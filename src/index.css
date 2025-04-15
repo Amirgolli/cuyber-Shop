@@ -47,13 +47,12 @@
     margin-top: 24.5px;
 }
 
-.listMenu,.listMenuB {
+.listMenu {
     opacity: 30%;
     font-weight: 500;
     cursor: pointer;
 }
-.listMenu:hover,
-.listMenuB:hover{
+.listMenu:hover{
     opacity: 80%;
     transition: all ease .2s;
 
@@ -436,74 +435,6 @@
     line-height: 32px;
 }
 
-/* .........................footer............................ */
-
-.footer {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    padding-top: 48px;
-    padding-left: 34px;
-    padding-right: 34px;
-}
-
-#logoWhite {
-    height: 27px;
-    margin-top: 32.5px;
-}
-
-#pFooter {
-    color: rgba(207, 207, 207, 1);
-    font-weight: 400;
-    line-height: 24px;
-    font-size: 13px;
-    margin-top: 16px;
-}
-
-.partList {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    margin-bottom: 32px;
-
-}
-
-
-.titleFooter {
-    font-weight: 600;
-    color: white;
-}
-#lists{
-    display: flex;
-    flex-direction: column;
-}
-.liServises {
-    color: rgba(207, 207, 207, 1);
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.socialMedia {
-    display: flex;
-    gap: 25.67px;
-    margin-bottom: 42px;
-}
-.socialMediaDK {
-    display: flex;
-    gap: 25.67px;
-    margin-left: 140px;
-    padding-bottom: 104px;
-}
-
-.iconSocailMedia {
-    width: 24px;
-}
-.backFooter{
-    background-color: black;
-}
-
 
 /* .........................media queries............................ */
 @media screen and (max-width:750px) {
@@ -518,10 +449,6 @@
     .productsDK {
         display: none;
     }
-    .socialMediaDK{
-        display: none;
-    }
-
 }
 
 
@@ -549,6 +476,8 @@
     .bigSummerSale {
         width: 1509px;
     }
+    
+
 }
 
 @media screen and (min-width:750px) {
@@ -600,33 +529,5 @@
         height: 448px;
         background-image: url("images/SummerDK.png");
     }
-    #lists{
-        flex-direction: row;
-        gap: 240px;
-        margin-left: 160px;
-        
 
-    }
-
-    .footer {
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: first baseline;
-
-    }
-    .socialMedia{
-        display: none;
-    }
-    #pFooter{
-        width: 344px;
-        text-align: left;
-    }
-    .about{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-    }
-    .partList{
-        align-items: baseline;
-    }
 }

@@ -5,14 +5,9 @@ import ShopNowBTN from './components/btnShopNow';
 import Category from './components/cardsCategory';
 import Cardproductmb from './components/cardProductMB';
 import PreviewCard from './components/PreviewCard';
+import Header from './components/header';
+import Footer from './components/footer'
 
-
-import burgurMenu from './images/burgur menu.png';
-import logo from './images/Logo Vector.png';
-// import search from './images/search.png';
-import love from './images/desktop/Vector love.png';
-import buy from './images/desktop/Vector buy.png';
-import logIn from './images/desktop/Vector log in.png';
 import Iphone from './images/Iphone Image.png';
 import IphoneD from './images/desktop/Iphone Image.png';
 import airpod from './images/headphone 14 pro 1.png';
@@ -42,12 +37,8 @@ import Watchandaipod from './images/watch&aipod.png';
 import Gallaxy from './images/Gallaxy.png';
 import GoldIphone from './images/GoldIphone.png';
 import WhiteIphone from './images/WhiteIphone.png';
-import Twitter from './images/Twitter.png';
-import Facebook from './images/Facebook.png';
-import Tiktok from './images/Tiktok.png';
-import Instagram from './images/Instagram.png';
-import LogoFooter from './images/Logo white.png';
-// 
+
+
 
 function App() {
 
@@ -112,31 +103,7 @@ function App() {
   return (
     <>
       {/* .....................header........................ */}
-      <div className="menu">
-        <h1><img id='logo' src={logo} alt="" /></h1>
-        <img id='burgurMenu' src={burgurMenu} alt="burgur menu" />
-      </div>
-
-      <div className="menuDesktop main-margine ">
-        <div>
-          <h1><img id='logo' src={logo} alt="" /></h1>
-        </div>
-        <div>
-          <input id='searchBox' type="text" placeholder='search' />
-          {/* <img id='search' src={search} alt="searchIcon" /> */}
-        </div>
-        <ul className='flexListMenu'>
-          <li className="listMenuB">Home</li>
-          <li className="listMenu">About</li>
-          <li className="listMenu">Contact</li>
-          <li className="listMenu">Blog</li>
-        </ul>
-        <div id='iconsMenu'>
-          <img className='iconM' src={love} alt="" />
-          <img className='iconM' src={buy} alt="" />
-          <img className='iconM' src={logIn} alt="" />
-        </div>
-      </div>
+        <Header></Header>
       {/* .....................banner........................ */}
 
       <div className="banner">
@@ -271,51 +238,7 @@ function App() {
         <ShopNowBTN></ShopNowBTN>
       </div>
       {/* .....................footer........................ */}
-      <footer className="backFooter">
-        <div className="footer">
-          <div className="about">
-            <img id='logoWhite' src={LogoFooter} alt="" />
-            <p id='pFooter'>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
-          </div>
-          <div id="lists">
-            <div className="listFooter">
-              <ul className='partList'>
-                <li className="titleFooter">Services</li>
-                <li className="liServises">Bonus program</li>
-                <li className="liServises">Gift cards</li>
-                <li className="liServises">Credit and payment</li>
-                <li className="liServises">Service contracts</li>
-                <li className="liServises">Non-cash account</li>
-                <li className="liServises">Payment</li>
-              </ul>
-            </div>
-            <div className="listFooter">
-              <ul className='partList'>
-                <li className="titleFooter">Assistance to the buyer</li>
-                <li className="liServises">Find an order</li>
-                <li className="liServises">Terms of delivery</li>
-                <li className="liServises">Exchange and return of goods</li>
-                <li className="liServises">Guarantee</li>
-                <li className="liServises">Frequently asked questions</li>
-                <li className="liServises">Terms of use of the site</li>
-              </ul>
-            </div>
-          </div>
-          <div className="socialMedia">
-            <img className='iconSocailMedia' src={Twitter} alt="" />
-            <img className='iconSocailMedia' src={Facebook} alt="" />
-            <img className='iconSocailMedia' src={Tiktok} alt="" />
-            <img className='iconSocailMedia' src={Instagram} alt="" />
-          </div>
-
-        </div>
-        <div className="socialMediaDK">
-          <img className='iconSocailMedia' src={Twitter} alt="" />
-          <img className='iconSocailMedia' src={Facebook} alt="" />
-          <img className='iconSocailMedia' src={Tiktok} alt="" />
-          <img className='iconSocailMedia' src={Instagram} alt="" />
-        </div>
-      </footer>
+          <Footer></Footer>
 
     </>
   )

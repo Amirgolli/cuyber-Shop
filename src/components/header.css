@@ -1,0 +1,94 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 27px;
+    margin-top: 32.5px;
+    margin-left: 16px;
+}
+
+#burgurMenu {
+    height: 58px;
+    margin-top: 24px;
+    margin-right: 16px;
+}
+
+.menuDesktop {
+    display: flex;
+    gap: 85.5px;
+    width: max-content;
+    margin:  0 auto;
+
+}
+
+#searchBox {
+    width: 370px;
+    height: 56px;
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 8px;
+    padding-left: 48px;
+    border: none;
+    margin-top: 16px;
+    position: relative;
+}
+
+#search {
+    width: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.flexListMenu {
+    display: flex;
+    gap: 52px;
+    margin-top: 24.5px;
+}
+
+.listMenu {
+    opacity: 30%;
+    font-weight: 500;
+    cursor: pointer;
+}
+.listMenu:hover{
+    opacity: 80%;
+    transition: all ease .2s;
+
+}
+
+#iconsMenu {
+    display: flex;
+    gap: 24px;
+    margin-top: 18px;
+}
+
+.iconM {
+    width: 20px;
+}
+@media screen and (max-width:750px) {
+    .menuDesktop {
+        display: none;
+    }
+
+
+}
+
+
+@media (min-width: 750px) and (max-width: 1521px) {
+    .menuDesktop {
+        display: flex;
+        gap: 85.5px;
+        margin:  0 170px;
+    }
+}
+
+@media screen and (min-width:750px) {
+    .menu {
+        display: none;
+    }
+
+
+
+}
