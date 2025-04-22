@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -378,6 +381,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 56px;
+    margin: 0 191px;
+    margin-bottom: 10px;
 }
 
 /* .........................framePreview............................ */
@@ -449,6 +454,9 @@
     .productsDK {
         display: none;
     }
+    .cardProduct{
+        margin: 0;
+    }
 }
 
 
@@ -467,6 +475,7 @@
 
     .cardProduct {
         width: 1509px;
+        margin: 0;
     }
 
     .Preview {

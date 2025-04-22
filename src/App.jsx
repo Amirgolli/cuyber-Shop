@@ -1,12 +1,12 @@
 import './index.css';
 import './App.css';
+import "tailwindcss";
+
 import Products from './components/products';
 import ShopNowBTN from './components/btnShopNow';
 import Category from './components/cardsCategory';
 import Cardproductmb from './components/cardProductMB';
 import PreviewCard from './components/PreviewCard';
-import Header from './components/header';
-import Footer from './components/footer'
 
 import Iphone from './images/Iphone Image.png';
 import IphoneD from './images/desktop/Iphone Image.png';
@@ -102,8 +102,6 @@ function App() {
 
   return (
     <>
-      {/* .....................header........................ */}
-        <Header></Header>
       {/* .....................banner........................ */}
 
       <div className="banner">
@@ -237,8 +235,6 @@ function App() {
         </div>
         <ShopNowBTN></ShopNowBTN>
       </div>
-      {/* .....................footer........................ */}
-          <Footer></Footer>
 
     </>
   )

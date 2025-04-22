@@ -6,13 +6,16 @@ import logo from '../images/Logo Vector.png';
 import love from '../images/desktop/Vector love.png';
 import buy from '../images/desktop/Vector buy.png';
 import logIn from '../images/desktop/Vector log in.png';
+import { Link } from 'react-router-dom';
 
 
 export default function header() {
     return (
         <div>
             <div className="menu">
-                <h1><img id='logo' src={logo} alt="" /></h1>
+                <Link to={'/filter'}>
+                    <h1><img id='logo' src={logo} alt="" /></h1>
+                </Link>
                 <img id='burgurMenu' src={burgurMenu} alt="burgur menu" />
             </div>
 

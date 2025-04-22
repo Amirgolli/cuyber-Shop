@@ -1,0 +1,40 @@
+.filterSection{
+    cursor: pointer;
+    font-Weight: bold;
+    border-Bottom: 1px solid #ccc;
+    padding: 8px 0 ;
+    background:none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 48px;
+    width: 256px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 3%;
+}
+
+#dataCheck{
+    padding-left: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+#titleBrand{
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:750px) {
+    #dataCheck{
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    
+}
