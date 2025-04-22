@@ -13,7 +13,7 @@ export default function header() {
     return (
         <div>
             <div className="menu">
-                <Link to={'/filter'}>
+                <Link to={'/'}>
                     <h1><img id='logo' src={logo} alt="" /></h1>
                 </Link>
                 <img id='burgurMenu' src={burgurMenu} alt="burgur menu" />

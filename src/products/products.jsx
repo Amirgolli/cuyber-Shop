@@ -2,6 +2,7 @@ import React from 'react'
 import FilterSection from '../components/filterSection';
 import Cardproductmb from '../components/cardProductMB';
 import LinkFilter from '../components/linkFilter.jsx'
+import { Link } from 'react-router-dom';
 
 
 import Watch from '../images/watch 14 pro 1.png';
@@ -50,7 +51,9 @@ export default function Home() {
     <>
       {/* .....................addressDK............. */}
       <div className="address" id='borderAddress'>
-        <h3 className='txtAddress'>Home</h3>
+        <Link to={'/'}>
+          <h3 className='txtAddress'>Home</h3>
+        </Link>
         <img src={Flash} alt="" className='FlashAddress' />
         <h3 className='txtAddress'>Catalog</h3>
         <img src={Flash} alt="" className='FlashAddress' />

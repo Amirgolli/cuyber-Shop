@@ -1,7 +1,7 @@
 import './index.css';
 import './App.css';
 import "tailwindcss";
-
+import { Link } from 'react-router-dom';
 import Products from './components/products';
 import ShopNowBTN from './components/btnShopNow';
 import Category from './components/cardsCategory';
@@ -110,7 +110,9 @@ function App() {
             <h4>Pro.Beyond.</h4>
             <h2>IPhone 14 <span>Pro</span></h2>
             <p>Created to change everything for the better. For everyone</p></div>
-          <ShopNowBTN></ShopNowBTN>
+            <Link to={'/products'}>
+              <ShopNowBTN></ShopNowBTN>
+            </Link>
         </div>
         <div className="img-banner">
           <img id='img-bannerMB' src={Iphone} alt="" />
