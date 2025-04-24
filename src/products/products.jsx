@@ -11,11 +11,9 @@ import Zfold from '../images/galaxy.png';
 import Buds from '../images/buds.png';
 import Ipad from '../images/Ipad.png';
 import airpod from '../images/headphone 14 pro 1.png';
-
 import Flash from '../images/desktop/Flash.png'
+
 import './products.css';
-import { Route } from 'react-router';
-import FilterMobile from './filterMobile.jsx';
 // import Rating from '../images/desktop/rating.png'
 
 export default function Home() {
@@ -45,6 +43,26 @@ export default function Home() {
     {
       brandName:"Nokia"
     }
+  ];
+  const storages=[
+    {
+      stor:'16GB'
+    },
+    {
+      stor:'32GB'
+    },
+    {
+      stor:'64GB'
+    },
+    {
+      stor:'128GB'
+    },
+    {
+      stor:'256GB'
+    },
+    {
+      stor:'512GB'
+    },
   ]
 
   return (
@@ -91,16 +109,16 @@ export default function Home() {
 
           </FilterSection>
           <FilterSection
-            title={"Battery capacity"}
+            title={"storages"}
           >
             <input type="text" name="search" id="searchBrand" placeholder='search' />
 
             {
-              Brands.map((brand,index)=>
+              storages.map((str,index)=>
               
               <div className="">
                 <input type="checkbox" name="test1" id="txtBrand" />
-                <label key={index} htmlFor="10">{brand.brandName}</label>
+                <label key={index} htmlFor="10">{str.stor}</label>
               </div>
 
               )

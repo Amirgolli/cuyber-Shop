@@ -28,14 +28,18 @@ export default function header() {
                     {/* <img id='search' src={search} alt="searchIcon" /> */}
                 </div>
                 <ul className='flexListMenu'>
-                    <li className="listMenu">Home</li>
+                    <Link to={'/'}>
+                        <li className="listMenu">Home</li>
+                    </Link>
                     <li className="listMenu">About</li>
                     <li className="listMenu">Contact</li>
                     <li className="listMenu">Blog</li>
                 </ul>
                 <div id='iconsMenu'>
                     <img className='iconM' src={love} alt="" />
-                    <img className='iconM' src={buy} alt="" />
+                    <Link to={'/cart'}>
+                        <img className='iconM' src={buy} alt="" />
+                    </Link>
                     <img className='iconM' src={logIn} alt="" />
                 </div>
             </div>

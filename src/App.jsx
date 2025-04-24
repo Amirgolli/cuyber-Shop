@@ -2,6 +2,7 @@ import './index.css';
 import './App.css';
 import "tailwindcss";
 import { Link } from 'react-router-dom';
+
 import Products from './components/products';
 import ShopNowBTN from './components/btnShopNow';
 import Category from './components/cardsCategory';

@@ -7,6 +7,10 @@ import ErrorPage from './Error/Error.jsx';
 import Products from './products/products.jsx';
 import Filter from './products/filterMobile.jsx';
 import Layout from './components/layout.jsx';
+import Cart from './cart/cart.jsx';
+import Detail from './Detail/Detail.jsx';
+
+
 import '@fontsource/inter';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -31,6 +35,18 @@ const router = createBrowserRouter(
         {
           path: '/filter',
           element: <Filter />,
+          errorElement: <ErrorPage />,
+        },
+
+        {
+          path: '/cart',
+          element: <Cart />,
+          errorElement: <ErrorPage />,
+        },
+
+        {
+          path: '/detail',
+          element: <Detail />,
           errorElement: <ErrorPage />,
         },
         
