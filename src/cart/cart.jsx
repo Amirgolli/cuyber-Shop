@@ -35,6 +35,12 @@ export default function cart() {
         },
         
     ]
+        
+        const sum = cartData.reduce( (acc,item) => acc + item.price,0 )
+
+        
+    
+
   return (
     <>
 
@@ -49,7 +55,6 @@ export default function cart() {
                     <CartCart
                     name={cart.name}
                     code={cart.code}
-                    num={cart.num}
                     price={cart.price}
                     img={cart.img}
                     key={index}
@@ -75,7 +80,7 @@ export default function cart() {
                     </div>
                     <div className="flex justify-between items-center">
                         <h4 className="">Subtotal</h4>
-                        <span className="">$2347</span>
+                        <span className="">${sum}</span>
                     </div>
 
                     <div className="flex justify-between items-center">

@@ -111,7 +111,7 @@ function App() {
             <h4>Pro.Beyond.</h4>
             <h2>IPhone 14 <span>Pro</span></h2>
             <p>Created to change everything for the better. For everyone</p></div>
-            <Link to={'/products'}>
+            <Link to={'/detail/1'}>
               <ShopNowBTN></ShopNowBTN>
             </Link>
         </div>

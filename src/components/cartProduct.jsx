@@ -1,6 +1,18 @@
 import React from 'react';
+import { useState } from 'react';
 
-export default function cartProduct({name, code, num, price, img}) {
+export default function CartProduct({name, code, price, img}) {
+  
+  const[count,setCount]=useState(1);
+
+  function Add(){
+    setCount(count+1);
+  }
+  function Subtracting(){
+    setCount(count-1);
+  }
+
+
   return (
     <div className='flex justify-between items-center border-b border-gray-400'>
 
@@ -12,9 +24,9 @@ export default function cartProduct({name, code, num, price, img}) {
           </div>
             <div className="flex justify-between items-center  w-50  ">
                 <div className=" flex items-center gap-2 ">
-                    <p> - </p>
-                    <p>{num}</p>
-                    <p>+</p>
+                    <p className='cursor-pointer' onClick={Subtracting}> - </p>
+                    <p>{count}</p>
+                    <p className='cursor-pointer' onClick={Add}>+</p>
                 </div>
                 <h4>${price}</h4>
                 <span>x</span>
