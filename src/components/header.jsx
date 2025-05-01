@@ -51,7 +51,12 @@ export default function Header() {
                     </Link>
                     <li className="listMenu">About</li>
                     <li className="listMenu">Contact</li>
-                    <li className="listMenu">Blog</li>
+
+                    <Link to={'/products'} onClick={backBgMenu} >
+                    <span className="listMenu">Products</span>
+                </Link>
+
+
                 </ul>
                 <div id='iconsMenu'>
                     <img className='iconM' src={love} alt="" />
