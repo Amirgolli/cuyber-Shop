@@ -9,7 +9,8 @@ import Filter from './products/filterMobile.jsx';
 import Layout from './components/layout.jsx';
 import Cart from './cart/cart.jsx';
 import Detail from './Detail/Detail.jsx';
-
+import LogIn from './LogIn/Login.jsx';
+import Signup from './Signup/Signup.jsx';
 
 import '@fontsource/inter';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -49,6 +50,21 @@ const router = createBrowserRouter(
           element: <Detail />,
           errorElement: <ErrorPage />,
         },
+
+        {
+          path :'/LogIn',
+          element:<LogIn />,
+          errorElement:<ErrorPage/>
+          
+        },
+
+        {
+          path :'/signup',
+          element:<Signup />,
+          errorElement:<ErrorPage/>
+          
+        },
+
         
         {
           path: '*',

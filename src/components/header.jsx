@@ -25,6 +25,10 @@ export default function Header() {
         setIsVisible(false)
     }
 
+
+
+  
+
     return (
 
         
@@ -61,9 +65,11 @@ export default function Header() {
                 <div id='iconsMenu'>
                     <img className='iconM' src={love} alt="" />
                     <Link to={'/cart'}>
-                        <img className='iconM' src={buy} alt="" />
+                        <img className='w-7' src={buy} alt="" />
                     </Link>
-                    <img className='iconM' src={logIn} alt="" />
+                    <Link to={'/signup'}>
+                        <img className='iconM' src={logIn} alt="" />
+                    </Link>
                 </div>
             </div>
 
@@ -100,14 +106,21 @@ export default function Header() {
             <li>
               <span className="text-gray-700 hover:text-blue-500 cursor-pointer">About</span>
             </li>
+            <li>
+              <Link to={'/signup'}>
+
+              <span onClick={backBgMenu}  className="text-gray-700 hover:text-blue-500 cursor-pointer">sign up</span>
+
+                
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
 
-      {/* پس‌زمینه تیره (Backdrop) */}
       {isVisible && (
         <div
-          className="fixed inset-0 bg-black opacity-50 bg-opacity-50 z-40"
+          className="fixed inset-0   bg-black opacity-50 bg-opacity-50 z-40"
           onClick={backBgMenu}
         ></div>
       )}
